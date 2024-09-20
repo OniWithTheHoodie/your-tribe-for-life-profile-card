@@ -1,5 +1,6 @@
 <script>
   export let person; // Receive the person data
+  console.log('Feteched person:', person);
 
   let showProfile = false;
 

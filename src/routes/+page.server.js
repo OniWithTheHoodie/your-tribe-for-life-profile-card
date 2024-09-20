@@ -5,10 +5,10 @@ export async function load() {
     if (!response.ok) throw new Error('Failed to fetch data');
 
     const data = await response.json();
-    const specificId = 84; // Just fetching data for ID 84
+    const specificId = 84; // fetch data for ID 84
 
     const person = data.data.find(person => person.id === specificId);
-    console.log('Fetched person data:', person); // Log the fetched data
+    console.log('Fetched person data:', person); // Logged fetched data
 
     return {
       person: person || null
